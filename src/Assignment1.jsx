@@ -1,5 +1,14 @@
-
-export default function ProfileComponent({card}){
+import { useState } from "react";
+export default function Assignment1(){
+    const [card, setCard] = useState({
+        imgLink: "/cat.jpg",
+        name: "Rita Correia",
+        age: "32",
+        country: "London",
+        followers: "80K",
+        likes: "803K",
+        photos: "1.4K",
+      });
     return (
         <div style={style.card}>
             
