@@ -34,8 +34,8 @@ export default function Assignment2(){
 
 const styles = {
     container: {
-        height: '100',  // Full viewport height
-        width: '100',   // Full viewport width
+        height: '100vh',  // Full viewport height
+        width: '100vw',   // Full viewport width
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
