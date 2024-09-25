@@ -47,7 +47,7 @@ export default function Assignment1(){
     )
 }
 
-const style = {
+const style = { 
     card: {
         border: '1px solid #ddd',
         borderRadius: '8px',
