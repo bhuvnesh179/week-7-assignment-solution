@@ -1,35 +1,46 @@
+import { useState } from "react";
 export default function Assignment2(){
-
+    const [backgroundColor, setBackgroundColor] = useState('white');
     return (
         <>
+        <div style={{ ...styles.container, backgroundColor: backgroundColor }}>
         <div style={styles.buttons}>
             <button style={styles.red}  onClick={() => {
-                document.body.style.backgroundColor = 'red';
+                setBackgroundColor('red')
             }}>Red</button>
             <button style={styles.yellow} onClick={() => {
-                document.body.style.backgroundColor = 'yellow';
+                setBackgroundColor('yellow')
             }}>Yellow</button>
             <button style={styles.black} onClick={() => {
-                document.body.style.backgroundColor = 'black';
+                setBackgroundColor('black')
             }}>Black</button>
             <button style={styles.purple} onClick={() => {
-                document.body.style.backgroundColor = 'purple';
+                setBackgroundColor('purple')
             }}>Purple</button>
             <button style={styles.green} onClick={() => {
-                document.body.style.backgroundColor = 'green';
+              setBackgroundColor('green')
             }}>Green</button>
             <button style={styles.blue} onClick={() => {
-                document.body.style.backgroundColor = 'blue';
+               setBackgroundColor('blue')
             }}>Blue</button>
             <button style={styles.default} onClick={() => {
-                document.body.style.backgroundColor = 'white';
+                setBackgroundColor('white')
             }}>Default</button>
+        </div>
         </div>
         </>
     )
 }
 
 const styles = {
+    container: {
+        height: '100',  // Full viewport height
+        width: '100',   // Full viewport width
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        // transition: 'background-color 0.5s ease',  // Smooth color transition
+    },
     buttons: {
         position: 'fixed',
         bottom: '10px',
